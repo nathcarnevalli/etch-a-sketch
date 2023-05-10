@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Amatic SC', cursive;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 431px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  border: 7px solid rgb(231, 231, 231);
+}
+
+.square {
+  border: 2px solid rgb(231, 231, 231);
+  width: 26px;
+  height: 26px;
+}
