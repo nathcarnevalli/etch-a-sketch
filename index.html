@@ -15,10 +15,25 @@
     <h1>Etch a Sketch</h1>
   </header>
   <main>
-    <div>
-      <button onclick="eraseAll()">Clear</button>
+    <div class="settings">
+      <div>
+        <p>Palette:</p>
+        <input type="color" value="#ff0000" class="color-picker">
+      </div>
+      <div>
+        <p>16 x 16</p>
+       <input id="sizeSlider" class="slider" type="range" value="16" min="1" max="64">
+      </div>
     </div>
-    <div class="container"></div>
+    <div class="container-btns">
+      <div class="btns">
+        <span class="btn-icon"><img width="25" src="./assets/pencil.png" alt="pencil"></span>
+        <span class="btn-icon"><img width="23" src="./assets/paint.png" alt="paint"></span>
+        <span class="btn-icon"><img width="30" src="./assets/eraser.png" alt="eraser"></span>
+        <span class="btn-icon"><img width="27" src="./assets/trash.png" alt="clear all"></span>
+      </div>
+      <div class="container"></div>
+    </div>
   </main>
   <footer>
     <h3>By nathcarnevalli</h3>
