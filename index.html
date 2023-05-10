@@ -18,19 +18,19 @@
     <div class="settings">
       <div>
         <p>Palette:</p>
-        <input type="color" value="#ff0000" class="color-picker">
+        <input type="color" value="#ff0000" class="color-picker" oninput="getPaletteColor(event)">
       </div>
       <div>
-        <p>16 x 16</p>
-       <input id="sizeSlider" class="slider" type="range" value="16" min="1" max="64">
+        <p id="sketchSize">16 x 16</p>
+       <input id="sizeSlider" class="slider" type="range" value="16" min="1" max="64" oninput="getSliderSize(event)">
       </div>
     </div>
     <div class="container-btns">
       <div class="btns">
-        <span class="btn-icon"><img width="25" src="./assets/pencil.png" alt="pencil"></span>
-        <span class="btn-icon"><img width="23" src="./assets/paint.png" alt="paint"></span>
-        <span class="btn-icon"><img width="30" src="./assets/eraser.png" alt="eraser"></span>
-        <span class="btn-icon"><img width="27" src="./assets/trash.png" alt="clear all"></span>
+        <span class="btn-icon"><img onclick="pencilMode()" width="25" src="./assets/pencil.png" alt="pencil"></span>
+        <span class="btn-icon"><img onclick="paintMode()" width="23" src="./assets/paint.png" alt="paint"></span>
+        <span class="btn-icon"><img onclick="eraserMode()" width="30" src="./assets/eraser.png" alt="eraser"></span>
+        <span class="btn-icon"><img  onclick="clearSketch()" width="27" src="./assets/trash.png" alt="clear all"></span>
       </div>
       <div class="container"></div>
     </div>
