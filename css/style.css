@@ -5,6 +5,15 @@
   font-family: 'Amatic SC', cursive;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited,
+a:active {
+  color: #000;
+}
+
 h1 {
   font-size: 80px;
   font-weight: bold;
@@ -26,17 +35,17 @@ main {
 
 .container {
   width: 431px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 431px;
+  display: grid;
+  grid-template-columns: repeat(16, minmax(0, 1fr));
+  grid-template-rows: repeat(16, minmax(0, 1fr));
   border-inline: 7px solid rgb(231, 231, 231);
   border-bottom: 7px solid rgb(231, 231, 231);
 }
 
 .square {
-  border: 2px solid rgb(231, 231, 231);
-  width: 26px;
-  height: 26px;
+  border: 1px solid rgb(231, 231, 231);
+  background-color: white;
 }
 
 .btns {
@@ -133,4 +142,5 @@ footer {
   bottom: 0;
   text-align: center;
   border-top: 1px solid #5e5e5e;
+  background-color: #fff;
 }
